@@ -6,11 +6,14 @@ This is NLog custom target projekt build to empower NLog to send logs directly t
 Quick start
 -----------
 
-To use NLog.RavenDb:
+To use NLog.RavenDb simply install NuGet 
+<code>Install-Package NLog.RavenDb</code>
 
--	Reference NLog.RavenDb and all its dependencies to your project.
+OR
 
--	Configure your NLog.config file like this:
+1.	Reference NLog.RavenDb and all its dependencies to your project.
+
+2.	Configure your NLog.config file like this:
 
 **NLog.config**
 
@@ -30,8 +33,6 @@ To use NLog.RavenDb:
 		</rules>
 
 	</nlog>
-
--	Use Nlog as you would always do.
 
 
 Developers
