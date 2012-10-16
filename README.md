@@ -6,7 +6,8 @@ This is NLog custom target projekt build to empower NLog to send logs directly t
 Quick start
 -----------
 
-To use NLog.RavenDb simply install NuGet 
+To use NLog.RavenDb simply install NuGet package
+
 <code>Install-Package NLog.RavenDb</code>
 
 OR
