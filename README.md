@@ -1,4 +1,4 @@
-NLog.RavenDb
+﻿NLog.RavenDb
 =================
 
 This is NLog custom target projekt build to empower NLog to send logs directly to RavenDb. 
@@ -7,35 +7,43 @@ Quick start
 -----------
 
 To use NLog.RavenDb:
-1. Referance NLog.RavenDb and all its dependencis to your project.
-2. Configure your NLog.config file like this:
 
-<pre><code><?xml version="1.0" encoding="utf-8" ?>
-<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
+-	Reference NLog.RavenDb and all its dependencies to your project.
+
+-	Configure your NLog.config file like this:
+
+**NLog.config**
+
+	<?xml version="1.0" encoding="utf-8" ?>
+
+	<nlog xmlns="http://www.nlog-project.org/schemas/NLog.xsd"
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <extensions>
-    <add assembly="NLog.RavenDb"/>
-  </extensions>
-  <targets>
-    <target xsi:type="RavenDb" name="raven" Host="http://localhost:8080" Database="Logs" />
-  </targets>
-  <rules>
-    <logger name="*" writeTo="raven" />
-  </rules>
-</nlog></code></pre>
 
-3. Use Nlog as you would always do.
+		<extensions>
+			<add assembly="NLog.RavenDb"/>
+		</extensions>
+		<targets>
+			<target xsi:type="RavenDb" name="raven" Host="http://localhost:8080" Database="Logs" />
+		</targets>
+		<rules>
+			<logger name="*" writeTo="raven" />
+		</rules>
+
+	</nlog>
+
+-	Use Nlog as you would always do.
+
 
 Developers
 ----------
 
-Mateusz �wietlicki
+Mateusz Świetlicki
 http://mateusz.swietlicki.net
 
 Copyright and license
 ---------------------
 
-Copyright 2012 Mateusz Swietlicki .NET
+Copyright 2012 Mateusz Świetlicki .NET
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this work except in compliance with the License.
