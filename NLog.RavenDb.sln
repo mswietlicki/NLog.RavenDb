@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.RavenDb", "NLog.RavenDb\NLog.RavenDb.csproj", "{9D3E26E0-C205-4A0F-85DD-8817BF1CBB59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NLog.RavenDb.Tests", "NLog.RavenDb.Tests\NLog.RavenDb.Tests.csproj", "{FA6F0E57-162E-4587-AEAA-15E41C7A7635}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9D3E26E0-C205-4A0F-85DD-8817BF1CBB59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9D3E26E0-C205-4A0F-85DD-8817BF1CBB59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9D3E26E0-C205-4A0F-85DD-8817BF1CBB59}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9D3E26E0-C205-4A0F-85DD-8817BF1CBB59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6F0E57-162E-4587-AEAA-15E41C7A7635}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6F0E57-162E-4587-AEAA-15E41C7A7635}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6F0E57-162E-4587-AEAA-15E41C7A7635}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6F0E57-162E-4587-AEAA-15E41C7A7635}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
