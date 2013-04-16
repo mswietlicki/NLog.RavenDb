@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using NLog;
-using NLog.Targets;
-using NLog.TypedLogs;
+﻿using NLog.TypedLogs;
 using Raven.Client.Document;
 
 namespace NLog.Targets
@@ -21,6 +15,7 @@ namespace NLog.Targets
         //[Required] 
         public string Host { get; set; }
         public string Database { get; set; }
+        public string ApiKey { get; set; }
 
         protected DocumentStore store { get; set; }
 
@@ -29,6 +24,11 @@ namespace NLog.Targets
             base.InitializeTarget();
 
             store = new DocumentStore { Url = Host, DefaultDatabase = Database };
+            if (!string.IsNullOrEmpty(ApiKey))
+            {
+                store.ApiKey = ApiKey;
+            }
+
             store.Initialize();
         }
 
